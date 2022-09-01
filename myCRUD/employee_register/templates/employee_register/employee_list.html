@@ -1,5 +1,12 @@
 {% extends "employee_register/base.html" %}
 
 {% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{ form }}
+</form>
+
+
+
 <p>employee list from the table</p>
 {% endblock content %}
